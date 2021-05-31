@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>App Quiz</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <form action="enviar.php" method="post">
+        <div id="container">
+            <header>
+                <h1>App Quiz</h1>
+                <p>Responde las siguientes preguntas: </p>
+            </header>
+            <section>
+            <div id="resultado"></div>
+                <form name="quizForm" onsubmit="return verificarRespuestas() ">
+
+                    <h3>1. ¿La noticia es de tú agrado?:</h3>
+                    <input type="radio" name="p1" value = "a"
+                    required>a. Me agrada <br/>
+                    <input type="radio" name="p1" value = "b">b. Me agrada muy poco <br/>
+                    <input type="radio" name="p1" value = "c">c. No me agrada <br/>
+
+                    <h3>2. La noticia, ¿Te parece intereante?</h3>
+
+                    <input type="radio" name="p2" value = "a"
+                    required>a. Sí, es bastante interesante <br/>
+                    <input type="radio" name="p2" value = "b">b. Es un poco interesante  <br/>
+                    <input type="radio" name="p2" value = "c">c. No es interesante <br/>
+
+                    <h3>3. ¿Crees qué la noticia es verdadera?</h3>
+
+                    <input type="radio" name="p3" value = "a"
+                    required>a. Sí, es verdadera <br/>
+                    <input type="radio" name="p3" value = "b">b. No, es falsa <br/>
+
+                    <h3>4. ¿Consideras qué las noticas falsas, son peligrosas para la sociedad?</h3>
+                    <input type="radio" name="p4" value = "a"
+                    required>a. Sí <br/>
+                    <input type="radio" name="p4" value = "b">b. No <br/>
+
+                    <h3>5. ¿Tomas precauciones para no ingresar a links de noticas falsas?</h3>
+                    <input type="radio" name="p5" value = "a"
+                    required>a. Sí, siempre <br/>
+                    <input type="radio" name="p5" value = "b">b. Algunas veces <br/>
+                    <input type="radio" name="p5" value = "c">c. Muy pocas veces <br/>
+                    <input type="radio" name="p5" value = "d">d. Nunca <br/>
+
+                    <input type="submit" value= "Enviar" id="boton">
+                </form>
+            </section>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
